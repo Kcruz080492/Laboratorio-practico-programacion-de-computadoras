@@ -6,10 +6,15 @@ let totalproductos = camisetas+pantalones+zapatos
 
 console.log("el total es de productos es "+totalproductos);
 
-if (camisetas < 100 ){console.log("no son necesarias mas camisetas")} 
-
-else if (pantalones < 100){console.log("no se necesitan mas pantalones")} 
-
-else if (zapatos < 100){console.log("no se necesitan mas zapatos")} 
-
-else{console.log("no es necesario reponer ningun producto");} 
+if (camisetas < 100 ){
+  console.log("Es necesario más camisetas")
+} if (pantalones < 100){
+  console.log("Es necesario más pantalones")
+} if (zapatos < 100){
+  console.log("Es necesario más zapatos")
+} 
+if (camisetas >=100 && pantalones >=100 && zapatos >=100){
+  console.log("Todos los productos están abastecidos")
+}else{
+  console.log("Algunos productos necesitan reposicion");
+} 
